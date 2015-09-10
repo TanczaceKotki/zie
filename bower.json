@@ -1,0 +1,23 @@
+{
+  "name": "zie",
+  "version": "0.1.0",
+  "homepage": "https://github.com/TanczaceKotki/zie",
+  "authors": [
+    "TanczaceKotki <k.bigaj@uj.edu.pl>"
+  ],
+  "description": "final project for zie course",
+  "main": "html/form.html.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "jquery-validation": "~1.14.0"
+  }
+}
