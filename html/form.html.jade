@@ -9,7 +9,7 @@ block inner
                 | uiszczeniu opłaty za koszt wyświetlenia ogłoszenia.
         div.col-md-3
 
-    form#ad(action='somewhere', method='POST')
+    form#ad(action='somewhere', method='POST').form-horizontal
         ul#section-tabs
             li.current.active
                 span 1.
@@ -23,80 +23,14 @@ block inner
                 span 5.
         #fieldsets
             fieldset.current
-                legend Lokalizacja
-                label(for='area') Dzielnica:
-                select.required(name='area')
-                    option(value='1').form-control Stare Miasto
-                    option(value='2').form-control Grzegórzki
-                    option(value='3').form-control Prądnik Czerwony
-                    option(value='4').form-control Prądnik Biały
-                    option(value='5').form-control Krowodrza
-                    option(value='6').form-control Bronowice
-                    option(value='7').form-control Zwierzyniec
-                    option(value='8').form-control Dębniki
-                    option(value='9').form-control Łagiewniki-Borek Fałęcki
-                    option(value='10').form-control Swoszowice
-                    option(value='11').form-control Podgórze Duchackie
-                    option(value='12').form-control Bieżanów-Prokocim
-                    option(value='13').form-control Podgórze
-                    option(value='14').form-control Czyżyny
-                    option(value='15').form-control Mistrzejowice
-                    option(value='16').form-control Bieńczyce
-                    option(value='17').form-control Wzgórza Krzesławickie
-                    option(value='18').form-control Nowa Huta
-                    option(value='19').form-control -
-
-                label(for='email') Ulica i numer domu:
-                input.required.email(name='email', type='email')
-                label(name='password', for='password') Password:
-                input.required(type='password', minlength='10')
+                block fieldset1
             fieldset.next
-                h3 Zakres wynajmu
-                label(for='username') Username:
-                input(name='username', type='text')
-                label(for='bio') Short Bio:
-                textarea.required(name='bio')
+                block fieldset2
             fieldset.next
-                h3 Warunki mieszkaniowe
-                label(for='interests') Basic Interests:
-                textarea(name='bio')
-                p
-                    | Receive newsletter?
-                    br
-                    input(type='radio', name='newsletter', value='yes')
-                    label(for='newsletter') yes
-                    input(type='radio', name='newsletter', value='no')
-                    label(for='newsletter') no
+                block fieldset3
             fieldset.next
-                h3 Opłaty
-                label(for='referrer') Referred by:
-                input(type='text', name='referrer')
-                label(for='phone') Daytime Phone:
-                input(type='tel', name='phone')
+                block fieldset4
             fieldset.next
-                h3 Zakończenie
-                label(for='referrer') Referred by:
-                input(type='text', name='referrer')
-                label(for='phone') Daytime Phone:
-                input(type='tel', name='phone')
+                block fieldset5
             a#next.btn Dalej &#x25B7;
             input.btn(type='submit')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

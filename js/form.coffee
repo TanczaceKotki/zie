@@ -1,6 +1,6 @@
 $('#ad').validate
   success: (label) ->
-    label.addClass('valid').text '?'
+    label.addClass('valid').text 'ok!'
   error: () ->
 # do nothing, but register this function
   onsubmit: false

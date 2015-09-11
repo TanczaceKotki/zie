@@ -22,7 +22,6 @@ textarea {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 100%;
   box-sizing: border-box;
   border: 1px solid #ddd;
   padding: 8px;
@@ -151,9 +150,9 @@ textarea + .valid {
 .valid + .valid {
   display: inline;
   position: absolute;
-  right: 10px;
-  margin-top: -36px;
-  color: green;
+  right: -15px;
+  margin-top: 7px;
+  color: #008000;
 }
 .btn {
   border: none;
@@ -178,8 +177,17 @@ textarea + .valid {
   background: #fff;
   margin: 80px auto;
   position: relative;
-  min-height: 300px;
+  min-height: 450px;
 }
 option.form-control {
   border: 0;
+}
+.input-group input[type=text] {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 3px;
+}
+.address-error {
+  clear: both;
 }

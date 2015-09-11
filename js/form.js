@@ -4,7 +4,7 @@
 
   $('#ad').validate({
     success: function(label) {
-      return label.addClass('valid').text('?');
+      return label.addClass('valid').text('ok!');
     },
     error: function() {},
     onsubmit: false,
