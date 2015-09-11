@@ -1,0 +1,52 @@
+legend Lokalizacja
+.form-group
+   label(for='area').control-label.col-lg-4 Dzielnica:
+   .col-lg-7
+      select(name='area').col-lg-12
+         option(value='1').form-control Stare Miasto
+         option(value='2').form-control Grzegórzki
+         option(value='3').form-control Prądnik Czerwony
+         option(value='4').form-control Prądnik Biały
+         option(value='5').form-control Krowodrza
+         option(value='6').form-control Bronowice
+         option(value='7').form-control Zwierzyniec
+         option(value='8').form-control Dębniki
+         option(value='9').form-control Łagiewniki-Borek Fałęcki
+         option(value='10').form-control Swoszowice
+         option(value='11').form-control Podgórze Duchackie
+         option(value='12').form-control Bieżanów-Prokocim
+         option(value='13').form-control Podgórze
+         option(value='14').form-control Czyżyny
+         option(value='15').form-control Mistrzejowice
+         option(value='16').form-control Bieńczyce
+         option(value='17').form-control Wzgórza Krzesławickie
+         option(value='18').form-control Nowa Huta
+   .col-lg-1
+
+.form-group
+   label(for='address').control-label.col-lg-4 Ulica i numer domu:
+   .col-lg-7
+      input.required(name='address', type='text').col-lg-12
+   .col-lg-1
+.form-group
+   label(for='transport').control-label.col-lg-4 Środki transportu:
+   .col-lg-7
+      .input-group
+         span.input-group-addon
+            input(type='checkbox')
+         span.form-control autobus
+            input(type='text' placeholder='numer linii')
+      .input-group
+         span.input-group-addon
+            input(type='checkbox')
+         span.form-control tramwaj
+            input(type='text' placeholder='numer linii')
+      .input-group
+         span.input-group-addon
+            input(type='checkbox')
+         span.form-control pociąg
+      .input-group
+         span.input-group-addon
+            input(type='checkbox')
+         span.form-control droga rowerowa
+   .col-lg-1

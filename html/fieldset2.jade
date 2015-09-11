@@ -1,0 +1,40 @@
+legend Zakres wynajmu
+.row.select-rent-type
+   .col-lg-1
+   .row.col-lg-10
+      .col-lg-4
+         img(src='../assets/i1.png').col-lg-12
+         h5.text-center mieszkanie
+      .col-lg-4
+         img(src='../assets/i2.png').col-lg-12
+         h5.text-center pokoje
+      .col-lg-4
+         img(src='../assets/i3.png').col-lg-12
+         h5.text-center miejsca w pokoju
+   .col-lg-1
+
+.row
+   .col-md-1
+   table#tab_logic.col-md-10.table.table-hover.table-bordered
+      thead
+         tr
+            th.text-center
+               | Pokój
+            th.text-center
+               | Miejsc
+            th.text-center
+               | Wolnych miejsc
+      tbody
+         tr#addr0
+            td
+               | 1
+            td
+               input.form-control(type='number' min='0'
+               name='name0')
+            td
+               input.form-control(type='number' min='0'
+               name='mail0')
+         tr#addr1
+   .col-md-1
+a#add_row.btn.btn-default.pull-left Add Row
+a#delete_row.pull-right.btn.btn-default Delete Row

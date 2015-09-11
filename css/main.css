@@ -191,3 +191,15 @@ option.form-control {
 .address-error {
   clear: both;
 }
+.select-rent-type img {
+  margin-bottom: 10px;
+}
+#tab_logic {
+  font-size: 14px;
+}
+#tab_logic td {
+  vertical-align: middle;
+}
+#tab_logic input.form-control {
+  width: 100px;
+}
