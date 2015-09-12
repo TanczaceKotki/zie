@@ -178,7 +178,7 @@ textarea + .valid {
 option.form-control {
   border: 0;
 }
-.input-group .input-group {
+.input-group .costs {
   float: right;
   width: 150px;
 }
@@ -223,10 +223,10 @@ option.form-control {
   position: relative;
   top: -1px;
 }
-#next {
+.standard {
   background: #2cbab2;
 }
-#next:hover {
+.standard:hover {
   background: #26a19a;
 }
 .hint {
