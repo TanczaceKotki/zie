@@ -178,11 +178,19 @@ textarea + .valid {
 option.form-control {
   border: 0;
 }
+.input-group .input-group {
+  float: right;
+  width: 150px;
+}
+.input-group .zl {
+  padding: 3px 10px;
+}
 .input-group input[type=text] {
   width: 50%;
-  height: 100%;
   float: right;
   padding: 3px;
+  height: 22px;
+  margin-bottom: 0;
 }
 .address-error {
   clear: both;
@@ -220,4 +228,7 @@ option.form-control {
 }
 #next:hover {
   background: #26a19a;
+}
+.hint {
+  color: #aaa;
 }

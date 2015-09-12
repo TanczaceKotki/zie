@@ -1,1 +1,42 @@
 legend Opłaty
+
+.form-group
+  label(for='address').control-label.col-lg-4 Czynsz:
+  .col-lg-7
+    input.required(name='address', type='text').col-lg-12
+  .col-lg-1
+
+.form-group
+  .col-lg-4
+    label.control-label.pull-right Dodatkowe opłaty:
+    span.hint.pull-right średnia kwota
+  .col-lg-7
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control gaz, prąd, woda
+        .input-group
+          input(type='text' placeholder='kwota w zł')
+          span.input-group-addon.zl zł
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control ogrzewanie
+        .input-group
+          input(type='text' placeholder='kwota w zł')
+          span.input-group-addon.zl zł
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control internet
+        .input-group
+          input(type='text' placeholder='kwota w zł')
+          span.input-group-addon.zl zł
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control inne
+        .input-group
+          input(type='text' placeholder='kwota w zł')
+          span.input-group-addon.zl zł
+  .col-lg-1
