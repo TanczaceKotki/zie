@@ -1,1 +1,44 @@
 legend Warunki mieszkaniowe
+
+.form-group
+  label(for='heating').control-label.col-lg-4 Ogrzewanie:
+  .col-lg-7
+    select(name='heating').col-lg-12
+      option(value='1').form-control CO
+      option(value='2').form-control Elektryczne
+      option(value='3').form-control Gazowe
+  .col-lg-1
+
+.form-group
+  label.control-label.col-lg-4 Wypozażenie:
+  .col-lg-7
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control Pralka
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control Umeblowanie
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control Lodówka
+    .input-group
+      span.input-group-addon
+        input(type='checkbox')
+      span.form-control Internet
+      .input-group
+        span.input-group-addon
+          input(type='checkbox')
+        span.form-control możliwość podłączenia
+
+
+  .col-lg-1
+
+.form-group
+  .col-lg-1
+  .col-lg-10
+    label.control-label Dodatkowe uwagi:
+    textarea.form-control( rows="5" id="comment")
+  .col-lg-1
