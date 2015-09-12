@@ -5,9 +5,9 @@
   height: auto;
   padding: 20px;
   background: #fff;
-  margin: 80px auto;
+  margin: 20px auto 0;
   position: relative;
-  min-height: 450px;
+  min-height: 500px;
 }
 
 option.form-control {
@@ -25,18 +25,44 @@ option.form-control {
   clear: both;
 }
 
-.select-rent-type {
+#select-rent-type {
+  margin-bottom: 10px;
   img {
     margin-bottom: 10px;
   }
 }
 
-#tab_logic {
-  font-size: 14px;
-  td {
-    vertical-align: middle;
+#room-table {
+  .btn-group {
+    margin-bottom: 5px;
   }
-  input.form-control {
-    width: 100px;
+
+  #tab_logic {
+    font-size: 14px;
+    width: auto;
+    td {
+      vertical-align: middle;
+    }
+    input.form-control {
+      width: 100px;
+    }
+  }
+
+  #add_row span {
+    position: relative;
+    top: -1px;
+    left: 1px;
+  }
+
+  #delete_row span {
+    position: relative;
+    top: -1px;
+  }
+}
+
+#next {
+  background: #2cbab2;
+  &:hover {
+    background: darken(#2cbab2, 6%);
   }
 }

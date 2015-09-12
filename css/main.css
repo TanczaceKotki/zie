@@ -157,7 +157,6 @@ textarea + .valid {
 .btn {
   border: none;
   padding: 8px;
-  background: #2cbab2;
   cursor: pointer;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -167,17 +166,14 @@ textarea + .valid {
   bottom: 20px;
   right: 20px;
 }
-.btn:hover {
-  background: #26a19a;
-}
 #ad {
   width: 600px;
   height: auto;
   padding: 20px;
   background: #fff;
-  margin: 80px auto;
+  margin: 20px auto 0;
   position: relative;
-  min-height: 450px;
+  min-height: 500px;
 }
 option.form-control {
   border: 0;
@@ -191,15 +187,37 @@ option.form-control {
 .address-error {
   clear: both;
 }
-.select-rent-type img {
+#select-rent-type {
   margin-bottom: 10px;
 }
-#tab_logic {
-  font-size: 14px;
+#select-rent-type img {
+  margin-bottom: 10px;
 }
-#tab_logic td {
+#room-table .btn-group {
+  margin-bottom: 5px;
+}
+#room-table #tab_logic {
+  font-size: 14px;
+  width: auto;
+}
+#room-table #tab_logic td {
   vertical-align: middle;
 }
-#tab_logic input.form-control {
+#room-table #tab_logic input.form-control {
   width: 100px;
+}
+#room-table #add_row span {
+  position: relative;
+  top: -1px;
+  left: 1px;
+}
+#room-table #delete_row span {
+  position: relative;
+  top: -1px;
+}
+#next {
+  background: #2cbab2;
+}
+#next:hover {
+  background: #26a19a;
 }
