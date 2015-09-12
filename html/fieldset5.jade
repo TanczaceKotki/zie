@@ -1,2 +1,20 @@
 legend Zakończenie
 
+.form-group
+  label(for='address').control-label.col-lg-4 Imię i nazwisko:
+  .col-lg-7
+    input.required(name='name', type='text').col-lg-12
+  .col-lg-1
+.form-group
+  label(for='address').control-label.col-lg-4 Telefon:
+  .col-lg-7
+    input.required(name='tel', type='tel').col-lg-12
+  .col-lg-1
+.form-group
+  .col-lg-1
+  .input-group.col-lg-10
+    span.input-group-addon
+      input(type='checkbox')
+    span.form-control.long-label Oświadczam, że znany jest mi regulamin
+      | zgłaszania ofert i deklaruję się do jego przestrzegania
+  .col-lg-1
